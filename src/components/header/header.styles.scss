@@ -1,0 +1,14 @@
+.header {
+   height: 50px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   // justify-content: flex-end;
+
+   position: fixed;
+
+   &__logo {
+      height: 1.5rem;
+      width: auto;
+   }
+}
