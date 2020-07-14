@@ -7,7 +7,7 @@
 
 .slider {
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
    display: grid;
    grid-template-columns:
       minmax(200px, 300px) minmax(150px, 250px) minmax(100px, 150px) minmax(0px, 50px)
@@ -26,17 +26,16 @@
    }
 
    &__background--image-1 {
-      background: url("../../assets/gallery-images/D1_AKSAM/D1_0_WIZYTÓWKA.jpg") center/cover;
+      background: url("/images/gallery-images/D1_AKSAM/D1_0_WIZYTÓWKA.jpg") center/cover;
    }
    &__background--image-2 {
-      background: url("../../assets/gallery-images/D2_ARCO/D2_0_WIZYTÓWKA.jpg") center/cover;
+      background: url("/images/gallery-images/D2_ARCO/D2_0_WIZYTÓWKA.jpg") center/cover;
    }
    &__background--image-3 {
-      background: url("../../assets/gallery-images/D3_QD/D3_0_WIZYTÓWKA.jpg") center/cover;
+      background: url("/images/gallery-images/D3_QD/D3_0_WIZYTÓWKA.jpg") center/cover;
    }
    &__background--image-4 {
-      background: url("../../assets/gallery-images/D4_MOLO_RESTAURACJA/D4_0_WIZYTÓWKA.jpg")
-         center/cover;
+      background: url("/images/gallery-images/D4_MOLO_RESTAURACJA/D4_0_WIZYTÓWKA.jpg") center/cover;
    }
 
    &__background-bottom {
@@ -46,6 +45,13 @@
       }
       &--dark {
          grid-column: 5;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .slider__description {
+            margin: 10px;
+         }
       }
    }
 

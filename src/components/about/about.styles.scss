@@ -1,0 +1,22 @@
+.about {
+   height: 800px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   &__text {
+      margin: 0 2rem;
+   }
+
+   &__wrapper {
+      width: 50%;
+   }
+
+   &__image-wrapper {
+      width: 50%;
+
+      .about__image {
+         margin: 0 70px;
+      }
+   }
+}

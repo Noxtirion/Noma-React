@@ -1,0 +1,36 @@
+.offer {
+   height: 800px;
+   background-color: #222327;
+   color: #fff;
+   display: flex;
+
+   &__title {
+      align-self: center;
+   }
+
+   &__wrapper {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   &__text {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 2rem;
+   }
+
+   &__parallax-wrapper {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+
+      .offer__parallax-image {
+         height: 800px;
+      }
+   }
+}

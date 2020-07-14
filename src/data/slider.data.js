@@ -1,18 +1,18 @@
-export const SLIDER_IMAGES = {
-   image_1: {
+export const SLIDER_DESCRIPTION = {
+   description_1: {
       id: 1,
-      image: "D1_AKSAM/D1_0_WIZYTÓWKA.jpg"
+      description: "BUDYNEK PRODUKCYJNO - MAGAZYNOWO - BIUROWY  PRZEMYSŁU SPOŻYWCZEGO"
    },
-   image_2: {
+   description_2: {
       id: 2,
-      image: "D2_ARCO/D2_0_WIZYTÓWKA.jpg"
+      description: "BUDYNEK MAGAZYNOWO - USŁUGOWY"
    },
-   image_3: {
+   description_3: {
       id: 3,
-      image: "D3_QD/D3_0_WIZYTÓWKA.jpg"
+      description: "PAWILON USŁUGOWY AUTO DETAILING"
    },
-   image_4: {
+   description_4: {
       id: 4,
-      image: "D4_MOLO_RESTAURACJA/D4_0_WIZYTÓWKA.jpg"
+      description: 'BUDYNEK RESTAURACYJNY - RESORT "MOLO"'
    }
 };

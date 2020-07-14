@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import CustomButton from "../custom-button/custom-button.component";
 import SliderSwap from "../slider-swap/slider-swap.component";
 
-import { SLIDER_IMAGES } from "../../data/slider.data";
+import { SLIDER_DESCRIPTION } from "../../data/slider.data";
 
 import { SliderContext } from "../../context/slider-context/slider-context";
 
@@ -12,7 +12,7 @@ import "./slider.styles.scss";
 const Slider = () => {
    const { count } = useContext(SliderContext);
 
-   // let [singleImage] = Object.values(SLIDER_IMAGES).filter(item => item.id === count);
+   let [projectDescription] = Object.values(SLIDER_DESCRIPTION).filter(item => item.id === count);
 
    return (
       <div className="slider">
@@ -39,7 +39,9 @@ const Slider = () => {
             /> */}
          </div>
          <div className="slider__background-bottom slider__background-bottom--light"></div>
-         <div className="slider__background-bottom slider__background-bottom--dark"></div>
+         <div className="slider__background-bottom slider__background-bottom--dark">
+            <div className="slider__description">{projectDescription.description}</div>
+         </div>
       </div>
    );
 };

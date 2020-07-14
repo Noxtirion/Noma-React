@@ -1,0 +1,8 @@
+.gallery-element {
+   overflow: hidden;
+
+   &__image {
+      display: block;
+      max-width: 100%;
+   }
+}
