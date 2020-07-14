@@ -16,6 +16,10 @@
    display: flex;
    justify-content: center;
 
+   &.slide {
+      transform: translateX(-200px);
+   }
+
    &:hover {
       background-color: #c9ba8e;
       color: black;

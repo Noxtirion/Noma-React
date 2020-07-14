@@ -1,0 +1,31 @@
+.slider-swap {
+   background-color: #c9ba8e;
+   width: 220px;
+   height: 100px;
+   margin: 5rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+   &.slide {
+      transform: translateX(50px);
+   }
+
+   &__right,
+   &__left {
+      height: 50px;
+      width: 50px;
+      border: 2px solid #fff;
+      color: #fff;
+      margin: 5px;
+      text-align: center;
+      font-size: 2rem;
+
+      &:hover {
+         cursor: pointer;
+         color: #222327;
+         border-color: #222327;
+      }
+   }
+}
