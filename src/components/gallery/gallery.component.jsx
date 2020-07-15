@@ -12,7 +12,6 @@ const Gallery = () => {
    const galleryImages = Object.values(GALLERY_IMAGES);
 
    const picture = galleryImages.map(item => {
-      // console.log(item.images.wizytowka);
       return (
          <GalleryImage key={item.id} path={`/images/gallery-images/${item.images.wizytowka}`} />
       );

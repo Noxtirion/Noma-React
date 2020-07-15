@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+
+import { MenuContext } from "../../context/menu-context/menu-context";
 
 import "./menu.styles.scss";
 
 const Menu = () => {
+   const { open } = useContext(MenuContext);
+
    return (
-      <div className="menu">
+      <div className={`menu ${!open ? "open" : ""}`}>
          <Link className="menu__option" to="/">
             STRONA GŁÓWNA
          </Link>
