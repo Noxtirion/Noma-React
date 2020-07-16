@@ -15,9 +15,13 @@
 
    &__option {
       margin: 1rem 10px;
+      border: 1px solid transparent;
+      padding: 5px;
 
       &:hover {
          cursor: pointer;
+         border: 1px solid #c9ba8e;
+         opacity: 0.8;
       }
    }
 

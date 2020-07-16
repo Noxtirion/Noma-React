@@ -1,4 +1,12 @@
 .gallery {
+   background-color: #222327;
+
+   h2 {
+      padding: 0.83em 10px;
+      margin: 0;
+      background-color: #fff;
+   }
+
    &__images {
       display: grid;
       grid-gap: 3px;

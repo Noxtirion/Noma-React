@@ -19,8 +19,8 @@ const About = () => (
          </SectionHeader>
          <div className="about__text">
             <p>
-               <span>NOMA ARCHITEKCI</span> to pracownia projektowa założona w 2011 roku. W branży
-               architektonicznej działamy od 2003 r.
+               <span className="about__text-bold">NOMA ARCHITEKCI</span> to pracownia projektowa
+               założona w 2011 roku. W branży architektonicznej działamy od 2003 r.
             </p>
             <p>
                W projektowaniu stawiamy na uniwersalizm, prostotę i oryginalność, przy jednoczesnym

@@ -3,6 +3,8 @@ import React, { useContext } from "react";
 import CustomButton from "../custom-button/custom-button.component";
 import SliderSwap from "../slider-swap/slider-swap.component";
 
+import { Link } from "react-scroll";
+
 import { SLIDER_DESCRIPTION } from "../../data/slider.data";
 
 import { SliderContext } from "../../context/slider-context/slider-context";
@@ -21,7 +23,9 @@ const Slider = () => {
                <h1 className="slider__title">NOMA ARCHITEKCI</h1>
                <p className="slider__text">pracownia projektowa</p>
             </header>
-            <CustomButton slider="slide">KONTAKT</CustomButton>
+            <Link className="slider__option" to="contact" smooth={true} offset={-70}>
+               <CustomButton slider="slide">KONTAKT</CustomButton>
+            </Link>
             <SliderSwap slider="slide" />
          </div>
          <div className="slider__background slider__background--city">

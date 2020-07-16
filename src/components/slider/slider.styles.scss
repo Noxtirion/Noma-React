@@ -98,7 +98,7 @@
          }
 
          .slider__description {
-            margin: 10px;
+            margin: 10px 2rem;
          }
       }
    }
@@ -143,6 +143,7 @@
             font-size: 2.5rem;
             margin-left: 0;
             transition: font-size 0.5s;
+            line-height: 1.4;
 
             @media (min-width: 800px) {
                margin-left: 3rem;

@@ -1,19 +1,33 @@
 .offer {
-   height: 800px;
+   height: auto;
    background-color: #222327;
    color: #fff;
    display: flex;
+   flex-direction: column;
+
+   @media (min-width: 800px) {
+      height: 800px;
+      flex-direction: row;
+   }
 
    &__title {
       align-self: center;
    }
 
    &__wrapper {
-      width: 50%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      @media (min-width: 800px) {
+         width: 70%;
+      }
+
+      @media (min-width: 1280px) {
+         width: 50%;
+      }
    }
 
    &__text {
@@ -21,13 +35,21 @@
       align-items: flex-start;
       flex-direction: column;
       justify-content: center;
-      margin: 0 2rem;
+      margin: 0 2rem 2rem;
    }
 
    &__parallax-wrapper {
-      width: 50%;
-      height: 100%;
-      overflow: hidden;
+      display: none;
+
+      @media (min-width: 800px) {
+         display: block;
+         width: 30%;
+         height: 100%;
+      }
+
+      @media (min-width: 1280px) {
+         width: 50%;
+      }
 
       .offer__parallax-image {
          height: 800px;
