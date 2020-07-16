@@ -14,3 +14,7 @@ Refactored page with use of React.
 ## Methodology
 
 -  BEM
+
+## Live
+
+[Live](https://admiring-brown-c03300.netlify.app/)
