@@ -19,7 +19,7 @@ const Gallery = () => {
 
    return (
       <section className="gallery">
-         <SectionHeader>
+         <SectionHeader name="gallery">
             <h2>PROJEKTY I REALIZACJE</h2>
          </SectionHeader>
          <div className="gallery__images">{picture}</div>

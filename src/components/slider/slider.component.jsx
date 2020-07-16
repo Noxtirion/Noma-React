@@ -15,7 +15,7 @@ const Slider = () => {
    let [projectDescription] = Object.values(SLIDER_DESCRIPTION).filter(item => item.id === count);
 
    return (
-      <div className="slider">
+      <section className="slider" id="top">
          <div className="slider__wrapper">
             <header className="slider__header">
                <h1 className="slider__title">NOMA ARCHITEKCI</h1>
@@ -42,7 +42,7 @@ const Slider = () => {
          <div className="slider__background-bottom slider__background-bottom--dark">
             <div className="slider__description">{projectDescription.description}</div>
          </div>
-      </div>
+      </section>
    );
 };
 

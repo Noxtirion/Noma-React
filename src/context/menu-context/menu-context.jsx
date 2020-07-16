@@ -8,8 +8,6 @@ function MenuContextProvider(props) {
       setOpen(!open);
    };
 
-   console.log(open);
-
    return (
       <MenuContext.Provider value={{ open, toggleButton }}>{props.children}</MenuContext.Provider>
    );

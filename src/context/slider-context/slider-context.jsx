@@ -22,7 +22,7 @@ function SliderContextProvider(props) {
    // useEffect(() => {
    //    console.log(count);
    //    setTimeout(() => {
-   //       Object.keys(SLIDER_IMAGES).length !== count
+   //       Object.keys(SLIDER_DESCRIPTION).length !== count
    //          ? setCount(prevCount => prevCount + 1)
    //          : setCount(1);
    //    }, 2000);

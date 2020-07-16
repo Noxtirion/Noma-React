@@ -7,7 +7,7 @@ import SectionHeader from "../section-header/section-header.component";
 const Contact = () => {
    return (
       <section className="contact">
-         <SectionHeader>
+         <SectionHeader name="contact">
             <h2>KONTAKT</h2>
          </SectionHeader>
          <div className="contact__wrapper">

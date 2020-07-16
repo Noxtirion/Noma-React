@@ -14,7 +14,7 @@ const About = () => (
          />
       </div>
       <div className="about__wrapper">
-         <SectionHeader>
+         <SectionHeader name="about">
             <h2>O NAS</h2>
          </SectionHeader>
          <div className="about__text">

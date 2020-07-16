@@ -8,7 +8,7 @@ const Offer = () => {
    return (
       <section className="offer">
          <div className="offer__wrapper">
-            <SectionHeader>
+            <SectionHeader name="offer">
                <h2>OFERTA</h2>
             </SectionHeader>
             <div className="offer__text">
