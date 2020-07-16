@@ -9,6 +9,7 @@ import ButtonUp from "./components/button-up/button-up.component.jsx";
 
 import { SliderContextProvider } from "./context/slider-context/slider-context.jsx";
 import { MenuContextProvider } from "./context/menu-context/menu-context";
+import { GalleryContextProvider } from "./context/gallery-context/gallery-context";
 
 import { useInView } from "react-intersection-observer";
 
@@ -33,7 +34,9 @@ function App() {
          </SliderContextProvider>
          <About />
          <Offer />
-         <Gallery />
+         <GalleryContextProvider>
+            <Gallery />
+         </GalleryContextProvider>
          <Footer />
          <ButtonUp appear={checkView ? "appear" : ""} />
       </div>

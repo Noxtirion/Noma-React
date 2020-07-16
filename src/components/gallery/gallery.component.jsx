@@ -13,7 +13,11 @@ const Gallery = () => {
 
    const picture = galleryImages.map(item => {
       return (
-         <GalleryImage key={item.id} path={`/images/gallery-images/${item.images.wizytowka}`} />
+         <GalleryImage
+            key={item.id}
+            path={`/images/gallery-images/${item.images.wizytowka}`}
+            description={item.description}
+         />
       );
    });
 

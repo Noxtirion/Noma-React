@@ -19,14 +19,15 @@ function SliderContextProvider(props) {
          : setCount(prevCount => prevCount - 1);
    };
 
-   // useEffect(() => {
-   //    console.log(count);
-   //    setTimeout(() => {
-   //       Object.keys(SLIDER_DESCRIPTION).length !== count
-   //          ? setCount(prevCount => prevCount + 1)
-   //          : setCount(1);
-   //    }, 2000);
-   // }, [count]);
+   useEffect(() => {
+      const id = setTimeout(() => {
+         Object.keys(SLIDER_DESCRIPTION).length !== count
+            ? setCount(prevCount => prevCount + 1)
+            : setCount(1);
+      }, 4000);
+
+      return () => clearTimeout(id);
+   }, [count]);
 
    return (
       <SliderContext.Provider value={{ count, toggleImageRight, toggleImageLeft }}>

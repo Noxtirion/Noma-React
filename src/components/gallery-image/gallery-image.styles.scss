@@ -1,8 +1,30 @@
 .gallery-element {
    overflow: hidden;
+   position: relative;
 
    &__image {
       display: block;
       max-width: 100%;
+   }
+
+   &__image:hover ~ &__description {
+      transform: translateY(0px);
+   }
+
+   &__description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      transform: translateY(100px);
+      transition: transform 0.5s;
    }
 }

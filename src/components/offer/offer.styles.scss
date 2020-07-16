@@ -1,9 +1,10 @@
 .offer {
-   height: auto;
+   min-height: 800px;
    background-color: #222327;
    color: #fff;
    display: flex;
    flex-direction: column;
+   justify-content: center;
 
    @media (min-width: 800px) {
       height: 800px;
