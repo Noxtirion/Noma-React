@@ -7,7 +7,7 @@
       max-width: 100%;
    }
 
-   &__image:hover ~ &__description {
+   &:hover &__description {
       transform: translateY(0px);
    }
 
