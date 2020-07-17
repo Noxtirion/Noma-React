@@ -1,0 +1,13 @@
+.pop-up-image {
+   max-width: 600px;
+   max-height: 100%;
+
+   &__element {
+      max-height: 300px;
+      max-width: 100%;
+
+      @media (min-width: 800px) {
+         max-height: 400px;
+      }
+   }
+}

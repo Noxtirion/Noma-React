@@ -1,6 +1,6 @@
 export const GALLERY_IMAGES = {
    aksam: {
-      id: 1,
+      id: 0,
       images: {
          wizytowka: "D1_AKSAM/D1_0_WIZYTÓWKA.jpg",
          D1_0: "D1_AKSAM/D1_0.jpg",
@@ -16,7 +16,7 @@ export const GALLERY_IMAGES = {
       description: "BUDYNEK PRODUKCYJNO - MAGAZYNOWO - BIUROWY  PRZEMYSŁU SPOŻYWCZEGO"
    },
    arco: {
-      id: 2,
+      id: 1,
       images: {
          wizytowka: "D2_ARCO/D2_0_WIZYTÓWKA.jpg",
          D2_0: "D2_ARCO/D2_0.jpg",
@@ -29,7 +29,7 @@ export const GALLERY_IMAGES = {
       description: "BUDYNEK MAGAZYNOWO - USŁUGOWY"
    },
    qd: {
-      id: 3,
+      id: 2,
       images: {
          wizytowka: "D3_QD/D3_0_WIZYTÓWKA.jpg",
          D3_0: "D3_QD/D3_0.jpg",
@@ -41,7 +41,7 @@ export const GALLERY_IMAGES = {
       description: "PAWILON USŁUGOWY AUTO DETAILING"
    },
    molo_restauracja: {
-      id: 4,
+      id: 3,
       images: {
          wizytowka: "D4_MOLO_RESTAURACJA/D4_0_WIZYTÓWKA.jpg",
          D4_0: "D4_MOLO_RESTAURACJA/D4_0.jpg",
@@ -55,7 +55,7 @@ export const GALLERY_IMAGES = {
       description: 'BUDYNEK RESTAURACYJNY - RESORT "MOLO"'
    },
    molo_hotel: {
-      id: 5,
+      id: 4,
       images: {
          wizytowka: "D5_MOLO_HOTEL/D5_0_WIZYTÓWKA.jpg",
          D5_0: "D5_MOLO_HOTEL/D5_0.jpg",
@@ -68,7 +68,7 @@ export const GALLERY_IMAGES = {
       description: 'BUDYNEK HOTELOWY - RESORT "MOLO"'
    },
    molo_kapielisko: {
-      id: 6,
+      id: 5,
       images: {
          wizytowka: "D6_MOLO_KAPIELISKO/D6_0_WIZYTÓWKA.jpg",
          D6_0: "D6_MOLO_KAPIELISKO/D6_0.jpg",
@@ -81,7 +81,7 @@ export const GALLERY_IMAGES = {
       description: 'KĄPIELISKO - RESORT "MOLO"'
    },
    karpik_lowisko: {
-      id: 7,
+      id: 6,
       images: {
          wizytowka: "D7_KARPIK_LOWISKO/D7_0_WIZYTÓWKA.jpg",
          D7_0: "D7_KARPIK_LOWISKO/D7_0.jpg",
@@ -96,7 +96,7 @@ export const GALLERY_IMAGES = {
       description: 'BUDYENK RESTAUARCYJNO - REKREACYJNY "ŁOWISKO"'
    },
    karpik_hotel: {
-      id: 8,
+      id: 7,
       images: {
          wizytowka: "D8_KARPIK_HOTEL/D8_0_WIZYTÓWKA.jpg",
          D8_0: "D8_KARPIK_HOTEL/D8_0.jpg",
@@ -107,7 +107,7 @@ export const GALLERY_IMAGES = {
       description: "ROZBUDOWA BUDYNKU HOTELOWO - RESTAURACYJNEGO"
    },
    molo_kemping: {
-      id: 9,
+      id: 8,
       images: {
          wizytowka: "D9_MOLO_KEMPING/D9_0_WIZYTÓWKA.jpg",
          D9_0: "D9_MOLO_KEMPING/D9_0.jpg",
@@ -118,21 +118,21 @@ export const GALLERY_IMAGES = {
       description: 'KEMPING - RESORT "MOLO"'
    },
    szkola: {
-      id: 10,
+      id: 9,
       images: {
          wizytowka: "D10_SZKOLA/D10_0_WIZYTÓWKA.jpg",
-         D10_0: "D10_MOLO_KEMPING/D10_0.jpg",
-         D10_1: "D10_MOLO_KEMPING/D10_1.jpg",
-         D10_2: "D10_MOLO_KEMPING/D10_2.jpg",
-         D10_3: "D10_MOLO_KEMPING/D10_3.jpg",
-         D10_4: "D10_MOLO_KEMPING/D10_4.jpg",
-         D10_5: "D10_MOLO_KEMPING/D10_5.jpg",
-         D10_6: "D10_MOLO_KEMPING/D10_6.jpg"
+         D10_0: "D10_SZKOLA/D10_0.jpg",
+         D10_1: "D10_SZKOLA/D10_1.jpg",
+         D10_2: "D10_SZKOLA/D10_2.jpg",
+         D10_3: "D10_SZKOLA/D10_3.jpg",
+         D10_4: "D10_SZKOLA/D10_4.jpg",
+         D10_5: "D10_SZKOLA/D10_5.jpg",
+         D10_6: "D10_SZKOLA/D10_6.jpg"
       },
       description: "BUDYNEK SZKOŁY PODSTAWOWEJ"
    },
    zator: {
-      id: 11,
+      id: 10,
       images: {
          wizytowka: "D11_ZATOR/D11_0_WIZYTÓWKA.jpg",
          D11_0: "D11_ZATOR/D11_0.jpg",
@@ -142,7 +142,7 @@ export const GALLERY_IMAGES = {
       description: "BUDYNEK MIESZKALNO - USŁUGOWY"
    },
    bialopradnicka: {
-      id: 12,
+      id: 11,
       images: {
          wizytowka: "D12_BIALOPRADNICKA/D12_0_WIZYTÓWKA.jpg",
          D12_0: "D12_BIALOPRADNICKA/D12_0.jpg",
@@ -153,17 +153,17 @@ export const GALLERY_IMAGES = {
       description: "KONCEPCJA ZABUDOWY WIELORODZINNEJ"
    },
    andrychow: {
-      id: 13,
+      id: 12,
       images: {
          wizytowka: "D13_ANDRYCHOW/D13_0_WIZYTÓWKA.jpg",
-         D13_0: "D13_BIALOPRADNICKA/D13_0.jpg",
-         D13_1: "D13_BIALOPRADNICKA/D13_1.jpg",
-         D13_2: "D13_BIALOPRADNICKA/D13_2.jpg"
+         D13_0: "D13_ANDRYCHOW/D13_0.jpg",
+         D13_1: "D13_ANDRYCHOW/D13_1.jpg",
+         D13_2: "D13_ANDRYCHOW/D13_2.jpg"
       },
       description: "KONCEPCJA REWITALIZACJI STAWÓW NA CELE REKREACYJNE"
    },
    osiek_plac: {
-      id: 14,
+      id: 13,
       images: {
          wizytowka: "D14_OSIEK_PLAC/D14_0_WIZYTÓWKA.jpg",
          D14_0: "D14_OSIEK_PLAC/D14_0.jpg",
@@ -174,7 +174,7 @@ export const GALLERY_IMAGES = {
       description: "PROJEKT PLACU WIELOFUNKCYJNEGO WRAZ Z PARKINGIEM"
    },
    mala_architektura: {
-      id: 15,
+      id: 14,
       images: {
          wizytowka: "D15_MALA_ARCHITEKTURA/D15_0_WIZYTÓWKA.jpg",
          D15_0: "D15_MALA_ARCHITEKTURA/D15_0.jpg",
