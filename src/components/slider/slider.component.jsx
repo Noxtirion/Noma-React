@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import CustomButton from "../custom-button/custom-button.component";
 import SliderSwap from "../slider-swap/slider-swap.component";
+import { CSSTransition, SwitchTransition } from "react-transition-group";
 
 import { Link } from "react-scroll";
 
@@ -39,9 +40,17 @@ const Slider = () => {
          <div className="slider__background"></div>
          <div className="slider__background"></div>
          <div className="slider__background"></div>
-         <div
-            className={`slider__background slider__background--image slider__background--image-${count}`}
-         ></div>
+         <SwitchTransition>
+            <CSSTransition
+               key={count}
+               addEndListener={(node, done) => node.addEventListener("transitionend", done, false)}
+               classNames="slider__background--image"
+            >
+               <div
+                  className={`slider__background slider__background--image slider__background--image-${count}`}
+               ></div>
+            </CSSTransition>
+         </SwitchTransition>
          <div className="slider__background-bottom slider__background-bottom--light"></div>
          <div className="slider__background-bottom slider__background-bottom--dark">
             <div className="slider__description">{projectDescription.description}</div>

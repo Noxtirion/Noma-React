@@ -24,7 +24,7 @@ function SliderContextProvider(props) {
          Object.keys(SLIDER_DESCRIPTION).length !== count
             ? setCount(prevCount => prevCount + 1)
             : setCount(1);
-      }, 4000);
+      }, 6000);
 
       return () => clearTimeout(id);
    }, [count]);

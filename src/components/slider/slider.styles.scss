@@ -53,29 +53,40 @@
       height: 350px;
       width: 100%;
       filter: contrast(60%) brightness(90%);
-      opacity: 0;
-      transition: opacity 1s;
 
       @media (min-width: 800px) {
          height: 100%;
       }
    }
 
+   &__background--image-enter {
+      opacity: 0.6;
+   }
+   &__background--image-exit {
+      opacity: 1;
+   }
+   &__background--image-enter-active {
+      opacity: 1;
+   }
+   &__background--image-exit-active {
+      opacity: 0;
+   }
+   &__background--image-enter-active,
+   &__background--image-exit-active {
+      transition: opacity 300ms;
+   }
+
    &__background--image-1 {
       background: url("/images/gallery-images/D1_AKSAM/D1_0_WIZYTÓWKA.jpg") center/cover;
-      opacity: 1;
    }
    &__background--image-2 {
       background: url("/images/gallery-images/D2_ARCO/D2_0_WIZYTÓWKA.jpg") center/cover;
-      opacity: 1;
    }
    &__background--image-3 {
       background: url("/images/gallery-images/D3_QD/D3_0_WIZYTÓWKA.jpg") center/cover;
-      opacity: 1;
    }
    &__background--image-4 {
       background: url("/images/gallery-images/D4_MOLO_RESTAURACJA/D4_0_WIZYTÓWKA.jpg") center/cover;
-      opacity: 1;
    }
 
    &__background-bottom {
