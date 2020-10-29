@@ -24,6 +24,7 @@ const PopUp = ({ projects }) => {
       if (!active) {
          setCount(1);
          setSingleImage(null);
+         setAllImage(null);
       }
    }, [active, singleImage]);
 
