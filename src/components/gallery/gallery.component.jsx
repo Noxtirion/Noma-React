@@ -46,7 +46,7 @@ const Gallery = () => {
          <div className="gallery__images" onClick={handleSingleProject}>
             {picture}
          </div>
-         <PopUp projects={imageData} />
+         { imageData && <PopUp projects={imageData} />}
       </section>
    );
 };

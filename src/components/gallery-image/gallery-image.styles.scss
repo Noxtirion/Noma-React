@@ -1,6 +1,7 @@
 .gallery-element {
    overflow: hidden;
    position: relative;
+   cursor: pointer;
 
    &__image {
       display: block;

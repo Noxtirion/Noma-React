@@ -18,7 +18,7 @@ import "./App.css";
 function App() {
    const [ref, inView, entry] = useInView({
       threshold: 0,
-      rootMargin: "30px"
+      rootMargin: "30px",
    });
 
    const checkView = entry !== undefined && !inView;

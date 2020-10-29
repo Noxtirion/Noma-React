@@ -13,24 +13,27 @@ const PopUp = ({ projects }) => {
    const [singleImage, setSingleImage] = useState(null);
 
    useEffect(() => {
-      projects && setAllImage(Object.values(projects.images));
-   }, [projects]);
+      projects && active && setAllImage(Object.values(projects.images));
+   }, [projects, active]);
 
    useEffect(() => {
-      allImage && setSingleImage(allImage[count]);
-   }, [allImage, count]);
+      allImage && active && setSingleImage(allImage[count]);
+   }, [allImage, count, active]);
 
    useEffect(() => {
-      !active && setCount(1);
-   }, [active]);
+      if (!active) {
+         setCount(1);
+         setSingleImage(null);
+      }
+   }, [active, singleImage]);
 
    const increment = () => {
-      allImage.length - 1 !== count ? setCount(prevCount => prevCount + 1) : setCount(1);
+      allImage.length - 1 !== count ? setCount((prevCount) => prevCount + 1) : setCount(1);
       allImage && setSingleImage(allImage[count]);
    };
 
    const decrement = () => {
-      count <= 1 ? setCount(allImage.length - 1) : setCount(prevCount => prevCount - 1);
+      count <= 1 ? setCount(allImage.length - 1) : setCount((prevCount) => prevCount - 1);
       allImage && setSingleImage(allImage[count]);
    };
 

@@ -12,7 +12,7 @@ const Menu = () => {
    return (
       <div className={`menu ${!open ? "open" : ""}`}>
          <Link className="menu__option" to="top" smooth={true}>
-            STRONA GŁÓWNA
+            START
          </Link>
          <Link className="menu__option" to="about" smooth={true} offset={-70}>
             O NAS
