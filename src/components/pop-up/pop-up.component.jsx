@@ -48,7 +48,7 @@ const PopUp = ({ projects }) => {
                </div>
             </div>
             <div className="pop-up__image">
-               <PopUpImage path={`/images/gallery-images/${singleImage}`} />
+               {singleImage && <PopUpImage path={`/images/gallery-images/${singleImage}`} />}
             </div>
             <div className="pop-up__buttons">
                <div className="pop-up__left" onClick={decrement}>
